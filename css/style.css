@@ -19,7 +19,7 @@ a{
 	z-index:200;
     top:2%;
 	right:0;
-	overflow:hidden; 
+	overflow:hidden;
     /*position:fixed;*/
     display:none;
 }
@@ -65,7 +65,7 @@ a{
 
 /*OVERLAY*/
 .overlay {
-    height: 100%;
+    height: 80vh;
     width: 0;
     position: fixed;
     z-index: 30;
@@ -93,11 +93,12 @@ a{
 .overlay a:hover, .overlay a:focus {
     color:#cccccc;
 }
+
 /*OVERLAY FOR SKYRA PAGE*/
 .overlay1{
 	background-color: #fff;
     opacity: 0.7;
-     height:100vh;
+    height:100vh;
     width: 0;
     position: fixed;
     z-index: 30;
@@ -130,11 +131,11 @@ a{
 	margin-left:4.166%;
 }
 .header-name{
-	font-size:34px;
+	font-size:22px;
 	color:#1A1A1A;
 	display:block;
 	height: 7.407vh;
-	line-height: 7.407vh;
+	line-height: 8vh;
 	margin:  0 !important;
 	font-family:'HelveticaNeueLTStd-Roman',sans-serif;
 }
@@ -153,7 +154,17 @@ a{
 	transform:translate(-50%,-50%);
 	border:1px solid #F2F2F2;
 }
-.box1{
+.contact-box{
+	background-color: #F2F2F2;
+	position:absolute;
+	height:85.185%;
+	top:50%;
+	width:91.666%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	border:1px solid #F2F2F2;
+}
+.skyra-box{
 	position:absolute;
 	height:85.185%;
 	top:50%;
@@ -168,9 +179,10 @@ a{
 
 /*NAVIGATION*/
 .navigation-a{
-	font-size: 36px;
+	font-size: 20px;
 	color:#4D4D4D;
-	line-height: 200%;
+	/*line-height: 60px;*/
+	line-height: 50px;
 	font-family:'HelveticaNeueLTStd-Roman',sans-serif;
 }
 .navigation-li{
@@ -243,7 +255,7 @@ a{
 }
 .second-sentence{
 	color:#1A1A1A;
-	font-size:36px;
+	font-size:20px;
 	font-weight: bold;
 	line-height: 200%;
 	padding-bottom:15px;
@@ -320,11 +332,19 @@ a{
 	font-size:18px;
 	color:#000000;
 	font-family:'HelveticaNeueLTStd-Roman',sans-serif;
+	 line-height: 1.6;
 }
 .perfomances-after{
 	color:#4D4D4D;
 	font-size:14px;
 	font-family:'HelveticaNeueLTStd-Roman',sans-serif;
+}
+.perfomance-about h6{
+    float:left;
+    margin-right:4px;
+}
+.perfomance-about h6:nth-of-type(3n) {
+    clear: left;
 }
 
 /*SKYRA-SOCIAL*/
@@ -391,11 +411,7 @@ a{
 
 
 /*MEDIA*/
-/*@media(max-width:1024px){
-	.copyright{
-	opacity: 1;
-    }
-}*/
+
 @media(max-width:992px){
     .about-text:before{
     content: ' ';
@@ -458,6 +474,29 @@ a{
 		-webkit-padding-start: 20px;
 	}
 }
+
+
+@media(max-height:750px){
+	.box{
+	background-color: #F2F2F2;
+	position:static;
+	height: auto;
+	margin-top:0;
+	width:91.666%;
+	margin-left:4%;
+	transform:translate(0%,0%);
+	border:1px solid #F2F2F2;
+    }
+   .footer {
+    position: static;
+    }
+ 
+
+}
+
+
+
+    
 @media(max-width:500px){
 	.header-name{
 		font-size:28px;
@@ -503,6 +542,12 @@ a{
     .second-sentence{
 		font-size:16px;
 	}
+	.copyright1{
+		font-size:10px;
+    }
+    .copyright{
+		font-size:10px;
+    }
 }
 @media(max-width:357px){
 	.name,
@@ -534,4 +579,3 @@ a{
 		font-size:10px;
 	}
 }
-
