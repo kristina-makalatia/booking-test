@@ -9,9 +9,11 @@ $(function(){
         $(".burger-icon").click(function() {
           var clicks = $(this).data('clicks');
           if (clicks) {
-            closeNav()
+            closeNav();
+            $('.box').css({height:"auto"});
           } else {
-             openNav()
+             openNav();
+            $('.box').css({height:"80vh"});
           }
           $(this).data("clicks", !clicks);
         });
